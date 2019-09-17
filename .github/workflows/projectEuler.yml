@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: setup
-      run: dir "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\"
+      run: dir "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC"
     - name: make
       run: CL Problem1.cpp
     

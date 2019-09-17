@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: setup
-      run: dir C:\"Program Files (x86)\Microsoft Visual Studio"\2019\Enterprise\VC\Tools\MSVC\
+      run: echo ::set-env name=CL::C:\"Program Files (x86)\Microsoft Visual Studio"\2019\Enterprise\VC\Tools\MSVC\14.22.27905\bin\Hostx64\x64\cl.exe
     - name: make
       run: CL Problem1.cpp
     

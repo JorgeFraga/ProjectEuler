@@ -17,6 +17,7 @@ jobs:
       run: |
           C:\"Program Files (x86)\Microsoft Visual Studio"\2019\Enterprise\VC\Auxiliary\Build\vcvars64.bat
           CL Problem1.cpp
+          dir
     - uses: actions/upload-artifact@master
       with:
         name: my-artifact 

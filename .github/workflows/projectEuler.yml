@@ -23,7 +23,7 @@ jobs:
     - uses: actions/upload-artifact@master
       with:
         name: my-artifact 
-        path: src/mainApp.exe
+        path: build/src/mainApp.exe
     
     
     

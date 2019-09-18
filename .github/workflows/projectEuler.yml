@@ -17,7 +17,9 @@ jobs:
           cmake --build .
           dir
     - name: tests
-      run: ctest -C Debug
+      run: |
+         cd build
+         ctest -C Debug
     - uses: actions/upload-artifact@master
       with:
         name: my-artifact 

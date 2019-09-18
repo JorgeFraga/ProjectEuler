@@ -16,9 +16,12 @@ jobs:
           cmake ..
           cmake --build .
           dir
+    - name: tests
+      run: ctest -C Debug
     - uses: actions/upload-artifact@master
       with:
         name: my-artifact 
-        path: Problem1.exe
+        path: src/mainApp.exe
+    
     
     

@@ -19,7 +19,7 @@ jobs:
     - name: tests
       run: |
          cd build
-         ctest -C Debug
+         ctest -C Debug --output-on-failure
     - uses: actions/upload-artifact@master
       with:
         name: my-artifact 

@@ -15,7 +15,7 @@ jobs:
           cd build
           cmake ..
           cmake --build .
-          dir
+          dir src
     - name: tests
       run: |
          cd build
